@@ -16,7 +16,7 @@ try {
   }
   await Deno.create("data/zh_tw.json");
 }
-const app = await Client.connect("http://tts001.iptcloud.net:8802/");
+const app = await Client.connect("https://mute-rice-9103.maoyue.workers.dev/");
 const oldFile = oldExists ? await Deno.readTextFile("data/zh_tw.json") : "{\n}";
 const newFile = await (
   await fetch(
