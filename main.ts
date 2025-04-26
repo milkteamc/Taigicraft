@@ -31,7 +31,7 @@ await Deno.writeTextFile("data/zh_tw.json", newFile);
 const oldFileLines = oldFile.split("\n");
 const newFileLines = newFile.split("\n");
 const newLines = newFileLines.filter((x) => !oldFileLines.includes(x));
-const outputLines = [];
+const outputLines: string[] = [];
 for await (const line of newLines) {
   const processedLine = line.endsWith(",")
     ? line.trim().slice(0, -1)
@@ -40,15 +40,26 @@ for await (const line of newLines) {
   const key = Object.keys(obj)[0];
   const value = obj[key];
   console.log(`Translating ${value} (${key})...`);
-  const response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
-  const responseData = response.data as string[];
+  let response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
+  let responseData = response.data as string[];
   console.log(`Result: ${responseData[0]}`);
-  const translatedValue = responseData[0];
-  await Deno.writeTextFile(
-    "data/translated.txt",
-    `"${key}":"${translatedValue}",`,
-    { append: true }
-  );
-  outputLines.push(`"${key}":"${translatedValue}",`);
+  let translatedValue = responseData[0].replaceAll("\n", "\\n");
+  const run = async () => {
+    if (translatedValue.includes("請求過於頻繁，請稍候再試。")) {
+      response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
+      responseData = response.data as string[];
+      console.log(`Result: ${responseData[0]}`);
+      translatedValue = responseData[0].replaceAll("\n", "\\n");
+      if (translatedValue.includes("請求過於頻繁，請稍候再試。")) await run();
+    } else {
+      await Deno.writeTextFile(
+        "data/translated.txt",
+        `\n"${key}":"${translatedValue}",`,
+        { append: true }
+      );
+      outputLines.push(`"${key}":"${translatedValue}",`);
+    }
+  };
+  await run();
 }
 await Deno.writeTextFile("data/nan.json", `{${outputLines.join("\n")}}`);
