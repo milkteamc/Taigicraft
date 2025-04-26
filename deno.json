@@ -1,5 +1,9 @@
 {
   "tasks": {
     "dev": "deno run --watch --allow-all main.ts"
-  }
+  },
+  "imports": {
+    "@gradio/client": "npm:@gradio/client@^1.14.2"
+  },
+  "nodeModulesDir": "auto"
 }

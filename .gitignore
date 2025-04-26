@@ -1,2 +1,4 @@
 data/
 output/
+deno.lock
+node_modules/
