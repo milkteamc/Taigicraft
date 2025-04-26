@@ -46,6 +46,7 @@ for await (const line of newLines) {
   let translatedValue = responseData[0].replaceAll("\n", "\\n");
   const run = async () => {
     if (translatedValue.includes("請求過於頻繁，請稍候再試。")) {
+      await new Promise((resolve) => setTimeout(resolve, 5000));
       response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
       responseData = response.data as string[];
       console.log(`Result: ${responseData[0]}`);
