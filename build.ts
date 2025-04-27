@@ -14,23 +14,22 @@ console.log(`Building Taigicraft v${ver}...`);
 const replacements = replacementsData.replacements;
 
 // Read the translation file
-let file = (await Deno.readTextFile("data/translated.txt")).slice(0, -1);
+let file = await Deno.readTextFile("data/translated.txt");
 
 // Apply all replacements from the JSON file
 for (const [from, to] of replacements) {
   file = file.replaceAll(from, to);
 }
 
-const outputLines = file.split("\n");
 await Deno.writeTextFile(
   `files/dev/${ver}/nan.json`,
-  `{${outputLines.join("\n")}}`
+  file
 );
 
 const zip = new JSZip();
 zip
   .folder("assets/minecraft/lang")
-  .addFile("nan.json", `{${outputLines.join("\n")}}`);
+  .addFile("nan.json", file);
 zip.addFile(
   `pack.mcmeta`,
   `{
