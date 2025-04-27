@@ -31,7 +31,6 @@ await Deno.writeTextFile("data/zh_tw.json", newFile);
 const oldFileLines = oldFile.split("\n");
 const newFileLines = newFile.split("\n");
 const newLines = newFileLines.filter((x) => !oldFileLines.includes(x));
-const outputLines: string[] = [];
 for await (const line of newLines) {
   const processedLine = line.endsWith(",")
     ? line.trim().slice(0, -1)
@@ -61,7 +60,6 @@ for await (const line of newLines) {
         `\n"${key}":"${translatedValue}",`,
         { append: true }
       );
-      outputLines.push(`"${key}":"${translatedValue}",`);
     }
   };
   await run();
