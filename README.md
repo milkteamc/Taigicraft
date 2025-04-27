@@ -9,3 +9,4 @@
 6. 開始耍方塊遊戲！
 ## Credits
 - [Machine Translation by iptcloud.net](http://tts001.iptcloud.net:8802/)
+- PaperMC's ISSUE_TEMPLATE
