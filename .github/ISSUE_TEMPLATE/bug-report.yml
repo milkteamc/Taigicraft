@@ -12,6 +12,7 @@ body:
         1. You are using the latest version of our code.
         2. You have searched to confirm there isn’t [an existing open issue](https://github.com/milkteamc/Taigicraft/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug) on this topic.
         3. You are using the supported version of Minecraft.
+        4. You are not reporting translation issues.
 
   - type: textarea
     attributes:
