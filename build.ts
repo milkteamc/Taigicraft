@@ -40,7 +40,7 @@ zip.addFile(
   },
   "language": {
     "nan": {
-      "name": "台語",
+      "name": "臺語",
       "region": "臺灣",
       "bidirectional": false
     }
