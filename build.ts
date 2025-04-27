@@ -58,5 +58,5 @@ const output = await zip.generateAsync({
   },
 });
 
-await Deno.writeFile(`output/Taigicraft ${ver}.zip`, output);
+await Deno.writeFile(`output/Taigicraft-${ver}.zip`, output);
 console.log("Done!");
