@@ -50,7 +50,10 @@ for await (const line of newLines) {
       response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
       responseData = response.data as string[];
       console.log(`Result: ${responseData[0]}`);
-      translatedValue = responseData[0].replaceAll("\n", "\\n");
+      translatedValue = responseData[0]
+        .replaceAll("\\", "\\\\")
+        .replaceAll("\n", "\\n")
+        .replaceAll('"', '\\"');
       if (translatedValue.includes("請求過於頻繁，請稍候再試。")) await run();
     } else {
       await Deno.writeTextFile(
@@ -63,4 +66,3 @@ for await (const line of newLines) {
   };
   await run();
 }
-await Deno.writeTextFile("data/nan.json", `{${outputLines.join("\n")}}`);
