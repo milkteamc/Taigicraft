@@ -12,6 +12,7 @@ const zip = new JSZip();
 const file = (await Deno.readTextFile("data/translated.txt"))
   .slice(0, -1)
   .replaceAll("侍服器", "伺服器")
+  .replaceAll("耍厝", "玩家")
   .replaceAll("% s", "%s")
   .replaceAll("% %", "%%")
   .replaceAll("% 一 $ s", "%1$s")
