@@ -22,6 +22,9 @@
 - `deno run t` 予系統初步翻譯文字。
 - `deno run b [版本號碼]` 將檔案做成一个zip資源包檔案。
 - 佇咧 `output/` 資料鋏內底揣著資源包，並且共複製過到方塊遊戲的資料鋏中。
+## Supports
+- [GitHub issues](https://github.com/milkteamc/Taigicraft/issues)
+- [Discord](https://discord.gg/DCnTeBsSHY)
 ## Credits
 - [Machine Translation by iptcloud.net](http://tts001.iptcloud.net:8802/)
 - PaperMC's ISSUE_TEMPLATE
