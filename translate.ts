@@ -30,14 +30,23 @@ await Deno.writeTextFile("data/zh_tw.json", newFile);
 const oldFileLines = oldFile.split("\n");
 const newFileLines = newFile.split("\n");
 const newLines = newFileLines.filter((x) => !oldFileLines.includes(x));
+
+const totalItems = newLines.length;
+let processedItems = 0;
+
 for await (const line of newLines) {
+  processedItems++;
+  const progressPercentage = Math.floor((processedItems / totalItems) * 100);
+  
   const processedLine = line.endsWith(",")
     ? line.trim().slice(0, -1)
     : line.trim();
   const obj = JSON.parse(`{${processedLine}}`);
   const key = Object.keys(obj)[0];
   const value = obj[key];
-  console.log(`Translating ${value} (${key})...`);
+  
+  console.log(`[${processedItems}/${totalItems} ${progressPercentage}%] Translating ${value} (${key})...`);
+  
   let response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
   let responseData = response.data as string[];
   console.log(`Result: ${responseData[0]}`);
@@ -63,4 +72,4 @@ for await (const line of newLines) {
   };
   await run();
 }
-console.log("Translation complete.");
+console.log(`[${totalItems}/${totalItems} 100%] Translation complete.`);
