@@ -3,7 +3,6 @@ import { Client } from "@gradio/client";
 try {
   await Deno.mkdir("data");
   await Deno.mkdir("output");
-  await Deno.create("output/nan.json");
   // deno-lint-ignore no-empty
 } catch (_) {}
 let oldExists = true;
@@ -64,3 +63,4 @@ for await (const line of newLines) {
   };
   await run();
 }
+console.log("Translation complete.");
