@@ -7,3 +7,5 @@
 4. 佇咧 `output/` 資料鋏內底揣著資源包，並且共複製過到方塊遊戲的資料鋏中。
 5. 揣著語言設定，並且共語言設定做臺語。
 6. 開始耍方塊遊戲！
+## Credits
+- [Machine Translation by iptcloud.net](http://tts001.iptcloud.net:8802/)
