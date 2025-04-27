@@ -1,4 +1,5 @@
 import { JSZip } from "https://deno.land/x/jszip/mod.ts";
+import replacementsData from "./fix-words.ts";
 
 const ver = Deno.args[0];
 if (!ver) {
@@ -10,7 +11,6 @@ if (!ver) {
 console.log(`Building Taigicraft v${ver}...`);
 
 // Load replacements from JSON file
-const replacementsData = JSON.parse(await Deno.readTextFile("fix-words.json"));
 const replacements = replacementsData.replacements;
 
 // Read the translation file
