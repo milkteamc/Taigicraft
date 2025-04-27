@@ -28,3 +28,5 @@
 ## Credits
 - [Machine Translation by iptcloud.net](http://tts001.iptcloud.net:8802/)
 - PaperMC's ISSUE_TEMPLATE
+- Icon made by Google Gemini
+- Mojang's language file host on mcasset.cloud
