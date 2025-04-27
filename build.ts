@@ -26,12 +26,15 @@ await Deno.writeTextFile(
   `files/dev/${ver}/nan.json`,
   `{${outputLines.join("\n")}}`
 );
-zip.folder("assets/minecraft/lang").addFile("nan.json",`{${outputLines.join("\n")}}`);
+zip
+  .folder("assets/minecraft/lang")
+  .addFile("nan.json", `{${outputLines.join("\n")}}`);
 zip.addFile(
   `pack.mcmeta`,
   `{
   "pack": {
-    "pack_format": { "min_inclusive": 1, "max_inclusive": 1000 },
+    "pack_format": 55,
+    "supported_formats": { "min_inclusive": 1, "max_inclusive": 1000 },
     "description": "§e佇方塊遊戲內底使用臺語。\\n§fby §dCow§aGL §f+ §6MilkTeaMC"
   },
   "language": {
@@ -43,5 +46,13 @@ zip.addFile(
   }
 }`
 );
-await zip.writeZip(`output/Taigicraft ${ver}.zip`);
+const output = await zip.generateAsync({
+  type: "uint8array",
+  compression: "STORE",
+  platform: "UNIX",
+  compressionOptions: {
+    level: 0,
+  },
+});
+await Deno.writeFile(`output/Taigicraft ${ver}.zip`, output);
 console.log("Done!");
