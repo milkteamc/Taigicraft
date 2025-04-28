@@ -6,7 +6,7 @@
 
 <h1>Taigicraft</h1>
 佇方塊遊戲內底使用臺語。<br/>
-在 Minecraft 內使用臺語。<br/>
+在 Minecraft 內使用臺灣台語。<br/>
 Use Taigi (Taiwanese) in Minecraft.<br/>
 </div>
 
@@ -35,7 +35,7 @@ Use Taigi (Taiwanese) in Minecraft.<br/>
 </details>
 
 <details>
-<summary>使用方式 (中文)</summary>
+<summary>使用方式 (正體中文)</summary>
 <h2>使用方式</h2>
 <h3>給使用者</h3>
 <ol>
