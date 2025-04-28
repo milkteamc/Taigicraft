@@ -139,7 +139,7 @@ const replacements: Replacements = {
     //["moo菇", ""],
     ["活動生怪卵", "驢仔生怪卵"],
     ["功仔", "騾仔"],
-    ["\"item.minecraft.mule_spawn_egg\":\"騾仔生怪卵\",", "\"item.minecraft.mule_spawn_egg\":\"騾仔生怪卵\","],
+    ["\"item.minecraft.mule_spawn_egg\":\"驢仔生怪卵\",", "\"item.minecraft.mule_spawn_egg\":\"騾仔生怪卵\","],
     ["Samuel Åberg-五", "Samuel Åberg-5"],
     ["延延", "延遲"],
     ["秒秒", "秒"],
