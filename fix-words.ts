@@ -106,6 +106,12 @@ const replacements: Replacements = {
     ["% 五 $ s", "%5$s"],
     ["% 六 $ s", "%6$s"],
     ["% 七 $ s", "%7$s"],
+    ["/ return", "/return"],
+    ["/ perf", "/perf"],
+    ["/ tp", "/tp"],
+    ["/ gamemode", "/gamemode"],
+    ["/ experience", "/experience"],
+    ["（ ", "（"],
   ],
 };
 export default replacements;
