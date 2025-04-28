@@ -132,7 +132,13 @@ const replacements: Replacements = {
     ["干冬", "馬鈴薯"],
     //["查某童", ""],
     //["完成的冊", "寫好的冊"],
+    //["蔫去", ""],
+    //["過身骷髏", ""]
     ["Samuel Åberg-五", "Samuel Åberg-5"],
+    ["延延", "延遲"],
+    ["秒秒", "秒"],
+    ["剪魚", "剪蟲"],
+    ["共死去的", "海龜死去"],
   ],
 };
 export default replacements;
