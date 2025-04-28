@@ -57,6 +57,5 @@ const output = await zip.generateAsync({
   },
 });
 
-await Deno.mkdir("output", { recursive: true });
 await Deno.writeFile(`output/Taigicraft-${ver}.zip`, output);
 console.log("Done!");
