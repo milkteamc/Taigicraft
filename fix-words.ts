@@ -59,6 +59,7 @@ const replacements: Replacements = {
     ["好放", "順流"],
     ["袂堪得用指令方塊", "袂當用指令方塊"],
     [" sa-khú-lah ", "櫻花"],
+    ['"sa-khú-lah ', '櫻花'], 
     ["活動火台", "煙墩"],
     ["三文魚", "紅鰱魚"],
     ["活動紅森林", "緋紅樹林"]
@@ -188,6 +189,10 @@ const replacements: Replacements = {
     ["殭屍紅森林", "緋紅森林"],
     ["殭屍體", "蕈光體"],
     ["殭屍絃", "弩上絃"],
+
+    [" khōng-ku-lí", "紅毛塗"], 
+    [" khōng-ku-lí ", "紅毛塗"], 
+    
   ],
 };
 export default replacements;
