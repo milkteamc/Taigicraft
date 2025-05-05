@@ -81,7 +81,7 @@ for await (const line of newLines) {
       translated[key] = translatedValue;
       await Deno.writeTextFile(
         "data/translated.txt",
-        JSON.stringify(translated)
+        JSON.stringify(translated, null, 2);
       );
     }
   };
