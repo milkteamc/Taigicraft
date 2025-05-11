@@ -67,6 +67,8 @@ const replacements: Replacements = {
     ["人講的羊毛", "殕色羊毛"],
     ["人講的灰色", "殕色"],
     ["烌色", "殕色"],
+    ["欲照", "快照"],
+    ["緊照", "快照"],
 
     //Function Keys
     ["F 一", "F1"],
