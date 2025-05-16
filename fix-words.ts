@@ -146,6 +146,7 @@ const replacements: Replacements = {
     ["生怪卵嘛", "怪物卵"],
     ["生怪卵", "怪物卵"],
     ["怪卵", "怪物卵"],
+    ["伊怪物卵", "怪物卵"],
 
     ["干冬", "馬鈴薯"],
     ["查某巫", "尪姨"],
@@ -207,10 +208,25 @@ const replacements: Replacements = {
     ["鼻師傅", "好鼻獅"],
     ["嗅探獸", "好鼻獅"],
     ["鼻獸", "好鼻獅"],
+    ["鼻鼻師", "好鼻獅"],
+    ["鼻師", "好鼻獅"],
+    ["好鼻獅傅伊的挖膎", "好鼻獅挖土"],
+    ["好鼻獅食進食", "好鼻獅進食"],
+    ["好鼻獅破去矣", "好鼻獅的卵破去矣"],
+    ['sniffer.happy":"好鼻獅傅傅', 'sniffer.happy":"好鼻獅歡喜'],
+    ['sniffer.idle":"好鼻獅傅傅傅', 'sniffer.idle":"好鼻獅鼾鼾叫'], // 打呼好像不太對
+    ['sniffer.scenting":"好鼻獅鼻鼻', 'sniffer.scenting":"好鼻獅鼻物件'], // "嗅探獸嗅聞"比較好理解 就是在聞東西
+    ['sniffer.searching":"好鼻獅走揣', 'sniffer.searching":"好鼻獅揣物件'],
+    ['sniffer.sniffing":"好鼻獅探探', 'sniffer.sniffing":"好鼻獅揣佮鼻物件'], // "嗅探獸嗅探"我真ㄉㄨ˙真ㄉㄨ˙不知道怎麼翻 只好翻成找和聞
+    [
+      'sniffer_egg.crack":"好鼻獅破去矣"',
+      'sniffer_egg.crack":"好鼻獅的卵破去矣"',
+    ],
     [
       'plant_any_sniffer_seed.title":"種往事',
       'plant_any_sniffer_seed.title":"種種往事',
     ],
+    ['sniffer_egg.plop":"好鼻獅佮卵nuī', 'sniffer_egg.plop":"好鼻獅生卵'],
 
     [" khōng-ku-lí", "紅毛塗"],
     [" khōng-ku-lí ", "紅毛塗"],
