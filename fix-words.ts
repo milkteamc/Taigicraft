@@ -181,6 +181,10 @@ const replacements: Replacements = {
     ["圖畫", "圖畫"],
     ["%s 天無殭屍", "%s 天無活動"],
     ["玩厝殭屍", "遊戲者活動"],
+    //button
+    ["揤鈕仔", "揤鈕"],
+    ["鈕仔", "揤鈕"],
+    ['mangrove_button":"紅樹林木開關', 'button":"紅樹林木揤鈕'],
     //鯪鯉舅
     ["殭屍動相放伴", "鯪鯉舅"],
     ['armadillo.death":"殭屍', 'armadillo.death":"鯪鯉舅'],
