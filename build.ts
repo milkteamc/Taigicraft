@@ -1,4 +1,4 @@
-import { JSZip } from "https://deno.land/x/jszip/mod.ts";
+import { JSZip } from "https://deno.land/x/jszip@0.11.0/mod.ts";
 import replacementsData from "./fix-words.ts";
 
 const ver = Deno.args[0];
@@ -21,15 +21,10 @@ for (const [from, to] of replacements) {
   file = file.replaceAll(from, to);
 }
 
-await Deno.writeTextFile(
-  `files/dev/${ver}/nan.json`,
-  file
-);
+await Deno.writeTextFile(`files/dev/${ver}/nan.json`, file);
 
 const zip = new JSZip();
-zip
-  .folder("assets/minecraft/lang")
-  .addFile("nan.json", file);
+zip.folder("assets/minecraft/lang").addFile("nan.json", file);
 zip.addFile(
   `pack.mcmeta`,
   `{
