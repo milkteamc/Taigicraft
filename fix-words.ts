@@ -185,6 +185,10 @@ const replacements: Replacements = {
     ["揤鈕仔", "揤鈕"],
     ["鈕仔", "揤鈕"],
     ['mangrove_button":"紅樹林木開關', 'button":"紅樹林木揤鈕'],
+    //mangrove
+    ["紅樹林木", "水筆仔"],
+    ["紅樹林仔", "水筆仔"],
+    ["紅樹林", "水筆仔"],
     //鯪鯉舅
     ["殭屍動相放伴", "鯪鯉舅"],
     ['armadillo.death":"殭屍', 'armadillo.death":"鯪鯉舅'],
