@@ -230,7 +230,7 @@ const replacements: Replacements = {
     ['sniffer.idle":"好鼻獅傅傅傅', 'sniffer.idle":"好鼻獅鼾鼾叫'], // 打呼好像不太對
     ['sniffer.scenting":"好鼻獅鼻鼻', 'sniffer.scenting":"好鼻獅鼻物件'], // "嗅探獸嗅聞"比較好理解 就是在聞東西
     ['sniffer.searching":"好鼻獅走揣', 'sniffer.searching":"好鼻獅揣物件'],
-    ['sniffer.sniffing":"好鼻獅探探', 'sniffer.sniffing":"好鼻獅揣佮鼻物件'], // "嗅探獸嗅探"我真ㄉㄨ˙真ㄉㄨ˙不知道怎麼翻 只好翻成找和聞
+    ['sniffer.sniffing":"好鼻獅探探', 'sniffer.sniffing":"好鼻獅揣佮鼻物件'], // "嗅探獸嗅探"我真的真的不知道怎麼翻 只好翻成找和聞
     [
       'sniffer_egg.crack":"好鼻獅破去矣"',
       'sniffer_egg.crack":"好鼻獅的卵破去矣"',
