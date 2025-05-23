@@ -75,6 +75,11 @@ const replacements: Replacements = {
       "收集以下的資料對阮來講會使幫助咱了解佮遊戲者相關的實際情形",
     ],
     ["激台", "激藥水的桌仔"],
+    ['crossbow":"khoo-mí-lah', 'crossbow":"弩弓'],
+    ["弩上絃", "弩弓上絃"],
+    //['箭硬劫中聲',''], // "箭矢擊中聲"我想不到怎麼翻
+    ['crossbow.load":"補貼', 'crossbow.load":"弩弓裝填'],
+    ['crossbow.shoot":"相放伴', 'crossbow.shoot":"弩弓發射'],
 
     //Function Keys
     ["F 一", "F1"],
