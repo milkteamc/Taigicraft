@@ -4,7 +4,7 @@
     "b": "deno run --allow-all build.ts"
   },
   "imports": {
-    "@gradio/client": "npm:@gradio/client@^1.14.2"
+    "@gradio/client": "npm:@gradio/client@^1.15.2"
   },
   "nodeModulesDir": "auto"
 }
