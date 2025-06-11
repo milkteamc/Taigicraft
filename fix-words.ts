@@ -253,6 +253,8 @@ const replacements: Replacements = {
 
     [" khōng-ku-lí", "紅毛塗"],
     [" khōng-ku-lí ", "紅毛塗"],
+    
+    [" / ", "/"]
   ],
 };
 export default replacements;
