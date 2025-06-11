@@ -256,7 +256,15 @@ const replacements: Replacements = {
     [" khōng-ku-lí", "紅毛塗"],
     [" khōng-ku-lí ", "紅毛塗"],
     
-    [" / ", "/"]
+    [" / ", "/"],
+    
+    // bee
+    ["\"container.beehive.honey\":\"蜜呢：%s/%s\"", "\"container.beehive.honey\":\"蜂蜜：%s / %s\""],
+    ["蜂仔乎：%s/%s", "蜂：%s / %s"],
+    ["蜂仔乎", "蜂"],
+    
+    ["耐久度：%s/%s", "耐久度：%s / %s"],
+    ["\"optimizeWorld.progress.counter\": \"%s/%s\"", "\"optimizeWorld.progress.counter\": \"%s / %s\""],
   ],
 };
 export default replacements;
