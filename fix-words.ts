@@ -81,7 +81,6 @@ const replacements: Replacements = {
     //['箭硬劫中聲',''], // "箭矢擊中聲"我想不到怎麼翻
     ['crossbow.load":"補貼', 'crossbow.load":"弩弓裝填'],
     ['crossbow.shoot":"相放伴', 'crossbow.shoot":"弩弓發射'],
-    ['緋水筆仔', '水筆仔'],
 
     //Function Keys
     ["F 一", "F1"],
@@ -196,11 +195,12 @@ const replacements: Replacements = {
     //button
     ["揤鈕仔", "揤鈕"],
     ["鈕仔", "揤鈕"],
-    ['mangrove_button":"紅樹林木開關', 'button":"紅樹林木揤鈕'],
+    ['mangrove_button":"紅樹林木開關', 'mangrove_button":"紅樹林木揤鈕'],
     //mangrove
     ["紅樹林木", "水筆仔"],
     ["紅樹林仔", "水筆仔"],
     ["紅樹林", "水筆仔"],
+    ['緋水筆仔', '水筆仔'],
     //鯪鯉舅
     ["殭屍動相放伴", "鯪鯉舅"],
     ['armadillo.death":"殭屍', 'armadillo.death":"鯪鯉舅'],
