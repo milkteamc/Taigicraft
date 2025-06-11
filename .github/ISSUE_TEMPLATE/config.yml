@@ -1,1 +1,7 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-issue-config.json
+
 blank_issues_enabled: false
+contact_links:
+  - name: Discord Community Support
+    url: https://discord.gg/DCnTeBsSHY
+    about: Please ask and answer questions here.
