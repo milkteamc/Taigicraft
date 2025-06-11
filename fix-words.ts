@@ -81,6 +81,7 @@ const replacements: Replacements = {
     //['箭硬劫中聲',''], // "箭矢擊中聲"我想不到怎麼翻
     ['crossbow.load":"補貼', 'crossbow.load":"弩弓裝填'],
     ['crossbow.shoot":"相放伴', 'crossbow.shoot":"弩弓發射'],
+    ['緋水筆仔', '水筆仔'],
 
     //Function Keys
     ["F 一", "F1"],
