@@ -32,7 +32,7 @@ const translated = JSON.parse(
 const oldFile = oldExists ? await Deno.readTextFile("data/zh_tw.json") : "{\n}";
 const newFile = await (
   await fetch(
-    "https://assets.mcasset.cloud/snapshot/assets/minecraft/lang/zh_tw.json"
+    "https://assets.mcasset.cloud/latest/assets/minecraft/lang/zh_tw.json"
   )
 ).text();
 if (oldFile == newFile) {
