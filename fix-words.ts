@@ -82,6 +82,12 @@ const replacements: Replacements = {
     ['crossbow.load":"補貼', 'crossbow.load":"弩弓裝填'],
     ['crossbow.shoot":"相放伴', 'crossbow.shoot":"弩弓發射'],
     [/(?<=netherite[a-z._]*": ")獄*/gm, "地獄烏混金"],
+    ["你試看覓執行的指令","你想欲執行的指令"],
+    ["敆成器","合成器"],
+    [/(?<=decorated_pot[a-z._]*": ")飾紋瓷仔?罐仔?/gm, "飾紋粗瓷罐仔"],
+    ["峇峇橐", "飾紋粗瓷罐仔"],
+    [/(?<=pottery_shard[a-z._]*": "[\u4E00-\u9FFF]*)粗?瓷?仔?陶?器?碎片/gm, "粗瓷碎片"],
+    ["瓷仔喙配仔", "粗瓷碎片"],
 
     //Function Keys
     ["F 一", "F1"],
