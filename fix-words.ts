@@ -38,7 +38,7 @@ const replacements: Replacements = {
     ["金言", "金尖喙掘仔"],
     ['"鐵仔', '"鐵尖喙掘仔'],
     ["璇石功", "璇石尖喙掘仔"],
-    ["獄獄殺", "獄獄尖喙掘仔"],
+    ["獄獄殺", "地獄烏混金尖喙掘仔"],
     ['斧"', '斧頭"'],
     ['鋤"', '掘仔"'],
     ['剷"', '掘仔"'],
@@ -81,6 +81,7 @@ const replacements: Replacements = {
     //['箭硬劫中聲',''], // "箭矢擊中聲"我想不到怎麼翻
     ['crossbow.load":"補貼', 'crossbow.load":"弩弓裝填'],
     ['crossbow.shoot":"相放伴', 'crossbow.shoot":"弩弓發射'],
+    [/(?<=netherite[a-z._]*": ")獄*/gm, "地獄烏混金"],
 
     //Function Keys
     ["F 一", "F1"],
