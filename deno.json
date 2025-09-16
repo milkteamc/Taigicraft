@@ -1,7 +1,8 @@
 {
   "tasks": {
     "t": "deno run --allow-all translate.ts",
-    "b": "deno run --allow-all build.ts"
+    "b": "deno run --allow-all build.ts",
+    "c": "deno run --allow-all check.ts"
   },
   "imports": {
     "@gradio/client": "npm:@gradio/client@^1.15.2"
