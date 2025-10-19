@@ -61,9 +61,13 @@ for await (const line of newLines) {
   console.log(
     `[${processedItems}/${totalItems} ${progressPercentage}%] Translating ${value} (${key})...`
   );
-
-  let response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
-  let responseData = response.data as string[];
+  let response, responseData;
+  if (/^(?!.*\p{Script=Han}).*$/gmu.exec(value)) {
+    responseData = [value];
+  } else {
+    response = await app.predict("/predict", [[], value, "taigi_zh_tw"]);
+    responseData = response.data as string[];
+  }
   console.log(`Result: ${responseData[0]}`);
   let translatedValue = responseData[0].replaceAll("\n", "\\n");
   const run = async () => {
